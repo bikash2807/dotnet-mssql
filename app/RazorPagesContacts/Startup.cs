@@ -43,7 +43,7 @@ namespace RazorPagesContacts
                     string server = Configuration["MSSQL_SERVER"] ?? "localhost";
                     string password = Configuration["MSSQL_SA_PASSWORD"];
                     string user = "sa";
-                    string dbName = "myContacts";
+                    string dbName = "myContact";
                     string connectionString = $@"Server={server};Database={dbName};User Id={user};Password={password};";
 
                     Logger.LogInformation($"Using SQL Server: {server}");
